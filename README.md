@@ -8,30 +8,30 @@ If you're looking for a way to display quick and easy content to the user, but d
 
 **Modal:**
 
->		<div class="slim_modal" id="exampleData">
-	<div class="sm_content">
-	<div class="sm_header"></div>
-	<div class="sm_icon_menu is_right">
-		<ul>
-			<li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
-		</ul>
-	</div>
-		<div class="sm_content_inner_wrap">
-			<div class="sm_area_all"></div>
-			<a class="sm_close sm_close_button">CLOSE</a>
-		</div>
-	</div>
-</div>	
+><div class="slim_modal" id="exampleData">
+				<div class="sm_content">
+				<div class="sm_header"></div>
+				<div class="sm_icon_menu is_right">
+					<ul>
+						<li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+					</ul>
+				</div>
+					<div class="sm_content_inner_wrap">
+						<div class="sm_area_all"></div>
+						<a class="sm_close sm_close_button">CLOSE</a>
+					</div>
+				</div>
+			</div>
 
 **Button (or whatever element) calling the modal:**
 
->		<a class="sm_open" 
-	data-modal="exampleData" 
-	data-effect="pushdown" 
-	data-header="#1 This header is from the link" 
-	data-overlay="red"
-	data-content="This is a sample HTML string being passed with a data-attribute... <p><h3>Super easy to change, simply by tweaking the button launching the modal.</h3></p>" 
-	data-wrapper-color="red">Modal (Passing Data-Attributes w/Eye-Searing Red Overlay Color)
-</a>
+><a class="sm_open" 
+				data-modal="exampleData" 
+				data-effect="pushdown" 
+				data-header="#1 This header is from the link" 
+				data-overlay="red"
+				data-content="This is a sample HTML string being passed with a data-attribute... <p><h3>Super easy to change, simply by tweaking the button launching the modal.</h3></p>" 
+				data-wrapper-color="red">Modal (Passing Data-Attributes w/Eye-Searing Red Overlay Color)
+			</a>
 
 It's literally as simple as that.
