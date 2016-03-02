@@ -34,4 +34,5 @@ If you're looking for a way to display quick and easy content to the user, but d
 				data-wrapper-color="red">Modal (Passing Data-Attributes w/Eye-Searing Red Overlay Color)
 			</a>
 
-It's literally as simple as that.
+It's literally as simple as that. Data-attributes are passed (add to or edit this mapping via the [slimmodal.js](js/slimmodal.js) file) to the modal on launch.
+
