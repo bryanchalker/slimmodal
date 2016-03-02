@@ -26,6 +26,7 @@ Very easy to use a single "empty" modal, byt merely passing in content from the 
 			</div>
 
 **Button (or whatever element) calling the modal:**
+
 > <a class="sm_open" data-modal="exampleData" 
 					data-effect="pushdown" 
 					data-header="#1 This header is from the link" 
