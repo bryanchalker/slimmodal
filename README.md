@@ -8,7 +8,7 @@ If you're looking for a way to display quick and easy content to the user, but d
 
 **Modal:**
 
-> <div class="slim_modal" id="exampleData">
+>		<div class="slim_modal" id="exampleData">
 	<div class="sm_content">
 	<div class="sm_header"></div>
 	<div class="sm_icon_menu is_right">
@@ -21,7 +21,7 @@ If you're looking for a way to display quick and easy content to the user, but d
 			<a class="sm_close sm_close_button">CLOSE</a>
 		</div>
 	</div>
-</div>
+</div>	
 
 **Button (or whatever element) calling the modal:**
 
