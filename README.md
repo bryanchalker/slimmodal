@@ -32,6 +32,15 @@ This is just a modal with a slide up header and slide out icon menu. A simple wa
 				</div>
 			</div>
 
+called via...
+
+> 			<a class="sm_open" 
+				data-modal="exampleAdvanced" 
+				data-effect="pushup" 
+				data-icons="is_right" >Modal (w/Header and Right Icon Menu)
+			</a>
+
+
 
 ## Using a single modal for multiple content calls
 If you're looking for a way to display quick and easy content to the user, but don't need to muddy up your markup with multiple modals to call, then consider passing content through with data-attributes. Very easy to use a single "empty" modal, by merely passing in content from the element calling the modal. 
