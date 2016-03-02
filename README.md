@@ -1,6 +1,21 @@
 # slimmodal
 A simple, flexible, responsive, flexbox-based modal. 
 
-I wanted to create a simple modal that would not rely on a library (like <em>Foundation, Semantic, Bootstrap, etc</em>), since those can often feel bloated and/or somewhat difficult to style. This also allow you to pass <em>"data-"</em> parameters for content and a couple of settings for the modal. This example is set up to allow you to look at the JS, CSS, and html markup...and learn from it. Sure, you can use as is - but dang, think of what you can do to make it better. Add some more <em>data-attributes</em>, <em>transform effects</em>, etc. 
+I wanted to create a simple modal that would not rely on a library (like <em>Foundation, Semantic, Bootstrap, etc</em>), since those can often feel bloated and/or somewhat difficult to style. This also allow you to pass <em>"data-"</em> parameters for content and a couple of settings for the modal. This example is set up to allow you to look at the JS, CSS, and html markup...and learn from it. Sure, you can use as is - but dang, think of what you can do to make it better. Add some more <em>data-attributes</em>, <em>transform effects</em>, etc.
 
-h2. Using a single modal for multiple content calls
+## Using a single modal for multiple content calls
+> 			<div class="slim_modal" id="exampleData">
+				<div class="sm_content">
+				<div class="sm_header"></div>
+				<div class="sm_icon_menu is_right">
+					<ul>
+						<li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+					</ul>
+				</div>
+					<div class="sm_content_inner_wrap">
+						<div class="sm_area_all"></div>
+						<a class="sm_close sm_close_button">CLOSE</a>
+					</div>
+				</div>
+			</div>
+
