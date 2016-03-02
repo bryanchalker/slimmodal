@@ -36,9 +36,9 @@ If you're looking for a way to display quick and easy content to the user, but d
 
 It's literally as simple as that. Data-attributes are passed (add to or edit this mapping via the [slimmodal.js](js/slimmodal.js) file) to the modal on launch.
 
-Quick overview of the mapping taking place:
+**Quick overview of the mapping taking place:**
 - _data-modal_ > ID for the modal
-- _data-effect_ > adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the css file, and are basic 2D transform with associated box-shadow.
+- _data-effect_ > adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file), and are basic 2D transform with associated box-shadow.
 - _data-header_ > This string populates the ".sm_header" class...typically a short title over the modal.
 
 
