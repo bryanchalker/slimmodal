@@ -33,5 +33,5 @@ If you're looking for a way to display quick and easy content to the user, but d
 					data-overlay="red"
 					data-content="This is a sample HTML string being passed with a data-attribute... <p<h3Super easy to change, simply by tweaking the button launching the modal.</h3</p" 
 					data-wrapper-color="red"Modal (Passing Data-Attributes w/Eye-Searing Red Overlay Color)
-				</a
+				</a>
 
