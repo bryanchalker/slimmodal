@@ -4,6 +4,37 @@ A simple, flexible, responsive, flexbox-based modal.
 I wanted to create a simple modal that would not rely on a library (like <em>Foundation, Semantic, Bootstrap, etc</em>), since those can often feel bloated and/or somewhat difficult to style. This also allow you to pass <em>"data-"</em> parameters for content and a couple of settings for the modal. This example is set up to allow you to look at the JS, CSS, and html markup...and learn from it. Sure, you can use as is - but dang, think of what you can do to make it better. Add some more <em>data-attributes</em>, <em>transform effects</em>, etc.
 
 ## Modal with a little more to it
+This is a standard modal with no personality.
+
+> <div class="slim_modal" id="examplePlain">
+				<div class="sm_content">
+					<div class="sm_content_inner_wrap">
+						<div class="sm_area_top">
+							<h3>Example Modal Content
+								<span>...for this CSS Demo</span>
+							</h3>
+						</div>
+						<div class="sm_area_bottom">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nihil asperiores recusandae odio distinctio earum voluptatibus, quisquam repellendus voluptas quaerat quis est totam, optio quia, molestias voluptatum error libero pariatur!</p>
+						</div>
+						<a class="sm_close sm_close_button">CLOSE</a>
+					</div>
+				</div>
+			</div>		
+            
+called via...
+> 			<a class="sm_open" 
+				data-modal="examplePlain" 
+				data-effect="pushdown" >Modal (Plain 'Ol Vanilla')
+			</a>
+            
+- _data-modal_: ID for the modal being called
+- _data-effect_ : adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file, and are basic 2D transform with associated box-shadow.
+
+
+
+
+## Modal with a little more to it
 This is just a modal with a slide up header and slide out icon menu. A simple way to have a little more intereaction with a modal, other than reading it or filling out a form. 
 
 > 		<div class="slim_modal" id="exampleAdvanced">
@@ -41,6 +72,10 @@ called via...
 			</a>
 
 
+- _data-modal_: ID for the modal being called
+- _data-effect_ : adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file, and are basic 2D transform with associated box-shadow.
+- _data-icons_ : Adds classes ".is_left" or ".is_right" for the slide out direction for the icon menu.
+
 
 ## Using a single modal for multiple content calls
 If you're looking for a way to display quick and easy content to the user, but don't need to muddy up your markup with multiple modals to call, then consider passing content through with data-attributes. Very easy to use a single "empty" modal, by merely passing in content from the element calling the modal. 
@@ -76,7 +111,7 @@ If you're looking for a way to display quick and easy content to the user, but d
 It's literally as simple as that. Data-attributes are passed (add to or edit this mapping via the [slimmodal.js](js/slimmodal.js) file) to the modal on launch.
 
 **Quick overview of the mapping taking place:**
-- _data-modal_ : ID for the modal
+- _data-modal_ : ID for the modal being called
 - _data-effect_ : adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file, and are basic 2D transform with associated box-shadow.
 - _data-header_ : This string populates the ".sm_header" class...typically a short title over the modal.
 - _data-overlay_ : adds this class to ".slim_modal", which is defined in the [styles.css](css/styles.css) file. This allows you to have different colors for the overlay easily. Several are already included: **green**, **red**, **tan**, and **none**. All are easily customizable in the css. 
