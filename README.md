@@ -37,9 +37,19 @@ If you're looking for a way to display quick and easy content to the user, but d
 It's literally as simple as that. Data-attributes are passed (add to or edit this mapping via the [slimmodal.js](js/slimmodal.js) file) to the modal on launch.
 
 **Quick overview of the mapping taking place:**
-- _data-modal_ > ID for the modal
-- _data-effect_ > adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file), and are basic 2D transform with associated box-shadow.
-- _data-header_ > This string populates the ".sm_header" class...typically a short title over the modal.
+- _data-modal_ : ID for the modal
+- _data-effect_ : adds this class to ".sm_content" to apply the loading effect on the modal. ".pushdown" and ".pushup" are defined in the [styles.css](css/styles.css) file, and are basic 2D transform with associated box-shadow.
+- _data-header_ : This string populates the ".sm_header" class...typically a short title over the modal.
+- _data-overlay_ : adds this class to ".slim_modal", which is defined in the [styles.css](css/styles.css) file. This allows you to have different colors for the overlay easily. Several are already included: **green**, **red**, **tan**, and **none**. All are easily customizable in the css. 
+- _data-content_ : This string populates the ".sm_area_all" section. 
+- _data-wrapper-color_ : Adds this class to ".sm_content", to allow you to add a but of color to the outer modal easily. 
+
+Remember, this project is set up with a pre-set group of data-attributes, but can be expanded very easily, with only minor tweaks to the js, css, and markup. 
+
+For example, you make want to add a "data-shadow" attribute to the elelment calling, which might remove the box-shadow applied by default. To do this:
+CSS: Add a class to the css file (such as "**.noshadow {box-shadow: none;}**").
+JS: Add "**var modalshadow = $(this).attr('data-shadow');" the map as "$('#' + modal + ' .sm_content').addClass(modalshadow);**"
+HTML: Add **data-shadow="noshadow"** to the element calling the modal
 
 
 
