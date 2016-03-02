@@ -25,8 +25,7 @@ If you're looking for a way to display quick and easy content to the user, but d
 
 **Button (or whatever element) calling the modal:**
 
-> 
-<a class="sm_open" 
+> 	<a class="sm_open" 
 	data-modal="exampleData" 
 	data-effect="pushdown" 
 	data-header="#1 This header is from the link" 
