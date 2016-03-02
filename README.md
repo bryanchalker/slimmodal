@@ -123,14 +123,8 @@ It's literally as simple as that. Data-attributes are passed (add to or edit thi
 Remember, this project is set up with a pre-set group of data-attributes, but can be expanded very easily, with only minor tweaks to the js, css, and markup. 
 
 For example, you make want to add a "data-shadow" attribute to the elelment calling, which might remove the box-shadow applied by default. To do this:
-- **CSS**
--- Add a class to the css file:
-Example... **.noshadow {box-shadow: none;}**.
-- **JS**
--- Add to the JS page:
-**var modalshadow = $(this).attr('data-shadow');** to define the variable
-**$('#' + modal + ' .sm_content').addClass(modalshadow);** to map that variable value to the correct element you are adding the class to.
-- **HTML**
--- Finally, add **data-shadow="noshadow"** to the element calling the modal. 
+- **CSS** : Add a class to the css file. Example... **.noshadow {box-shadow: none;}**.
+- **JS** : Add to the JS page. **var modalshadow = $(this).attr('data-shadow');** to define the variable AND **$('#' + modal + ' .sm_content').addClass(modalshadow);** to map that variable value to the correct element you are adding the class to.
+- **HTML** : Finally, add **data-shadow="noshadow"** to the element calling the modal. 
 
 That's it :)
