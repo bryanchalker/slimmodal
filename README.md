@@ -47,9 +47,9 @@ It's literally as simple as that. Data-attributes are passed (add to or edit thi
 Remember, this project is set up with a pre-set group of data-attributes, but can be expanded very easily, with only minor tweaks to the js, css, and markup. 
 
 For example, you make want to add a "data-shadow" attribute to the elelment calling, which might remove the box-shadow applied by default. To do this:
-CSS: Add a class to the css file (such as "**.noshadow {box-shadow: none;}**").
-JS: Add "**var modalshadow = $(this).attr('data-shadow');" the map as "$('#' + modal + ' .sm_content').addClass(modalshadow);**"
-HTML: Add **data-shadow="noshadow"** to the element calling the modal
+- CSS: Add a class to the css file (such as "**.noshadow {box-shadow: none;}**").
+- JS: Add "**var modalshadow = $(this).attr('data-shadow');" the map as "$('#' + modal + ' .sm_content').addClass(modalshadow);**"
+- HTML: Add **data-shadow="noshadow"** to the element calling the modal
 
 
 
